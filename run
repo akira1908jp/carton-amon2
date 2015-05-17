@@ -1,0 +1,7 @@
+#!/bin/bash
+carton exec amon2-setup.pl webapp
+cd webapp
+carton install
+carton exec perl -Ilib script/webapp-server
+
+
